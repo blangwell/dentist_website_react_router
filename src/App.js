@@ -15,6 +15,11 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <nav>
+        <Link to='/'>Home</Link>{' '}
+        <Link to='/procedures'>Procedures </Link>{' '}
+        <Link to='/contact'>Contact us</Link>{' '}
+      </nav>
       {/* each of these components need to have its own route */}
         {/* use the exact keyword so that every page with a / in the url wont show home component */}
         <Route exact path='/' component={Home} />
